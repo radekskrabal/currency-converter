@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+
+/* STRUCTURE */
+
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+
+header {
+	height: 150px;
+	padding: 0 15px;
+}
+
+#converter {
+	padding: 5em 15px;
+}
+
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+
+	#converter {
+		padding: 1% 4%;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#converter {
+		float: none;
+	}
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+    
+}
+
+
+#converter {
+	background: #f8f8f8;
+    text-align: center;
+}
+
+pre {
+    display: inline;
+}
+
+button {
+    display: inline;
+}
+
+h2#result {
+	visibility: hidden;
+}
+
+header, #converter {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #converter, footer {
+	border: solid 1px #ccc;
+}
+
+footer {
+    text-align: right;
+}
