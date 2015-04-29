@@ -178,7 +178,8 @@ var getCurrencies = function() {
 
     // $.getJSON('https://openexchangerates.org/api/currencies.json?app_id=' + apiKey, function (currencies) {
         // cache the select el
-        var targetSelect = $('select[name=targetUnit]'),
+        var amountSelect = $('select[name=amountUnit]'),
+            targetSelect = $('select[name=targetUnit]'),
             options = [];
 
         // create options
@@ -190,6 +191,7 @@ var getCurrencies = function() {
 
         // append all currencies
         $.each(options, function (index, option) {
+            amountSelect.append(option);
             targetSelect.append(option);
         });
     // });
@@ -384,7 +386,7 @@ var convert = function() {
         amountUnit = $('select[name=amountUnit]').val(),
         targetUnit = $('select[name=targetUnit]').val();
 
-    return amount * exchangeRates[targetUnit];
+    return amount / exchangeRates[amountUnit] * exchangeRates[targetUnit];
 };
 
 var showResult = function() {
