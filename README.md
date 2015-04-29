@@ -7,4 +7,4 @@ Convert exchange rates between currencies using real-time open exchange rates AP
 ## CurrencyConverter
 <strong>CurrencyConverter</strong> is a web app which provides currency conversion between all available currencies.
 
-It uses <strong>jQuery</strong> for DOM manipulation loaded through CDN. No additional dependencies needed. 
+It uses <strong>jQuery</strong> for DOM manipulation loaded through Google APIs CDN. No additional dependencies needed. 
